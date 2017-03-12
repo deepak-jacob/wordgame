@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 const WordGraph = require('./lib/WordGraph');
-const dictionary = fs.readFileSync('resources/websters-dictionary').toString().split(/\r?\n/);
+const dictionary = fs.readFileSync('resources/web2.txt').toString().split(/\r?\n/);
 
 const wordGraph = new WordGraph();
 wordGraph.create(dictionary);
